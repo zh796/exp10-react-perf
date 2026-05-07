@@ -1,0 +1,56 @@
+.report-page { display: flex; flex-direction: column; gap: 32px; }
+.section-h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 16px; }
+
+/* Lighthouse 圆环 */
+.gauge-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 16px 0;
+}
+.gauge-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.gauge-label { font-size: 0.88rem; color: var(--color-text-muted); font-weight: 600; }
+
+/* CWV 卡片 */
+.cwv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.cwv-card {
+  text-align: center;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.cwv-good  { border-top: 3px solid var(--color-success); }
+.cwv-needs { border-top: 3px solid var(--color-secondary); }
+.cwv-poor  { border-top: 3px solid var(--color-danger); }
+.cwv-icon  { font-size: 2rem; }
+.cwv-name  { font-weight: 700; font-size: 1.1rem; }
+.cwv-value { font-size: 2rem; font-weight: 800; line-height: 1; }
+.cwv-status { font-size: 0.82rem; font-weight: 600; }
+.cwv-desc  { font-size: 0.8rem; color: var(--color-text-muted); }
+
+/* 结论 */
+.conclusion-list { display: flex; flex-direction: column; gap: 20px; }
+.conclusion-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: var(--color-surface2);
+  border-radius: var(--radius-sm);
+}
+.conclusion-icon { font-size: 1.6rem; flex-shrink: 0; }
+.conclusion-item h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+.conclusion-item p  { font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; }
+
+code { font-family: 'Fira Code', monospace; font-size: 0.88em; }
